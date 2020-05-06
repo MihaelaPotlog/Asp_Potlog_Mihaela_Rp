@@ -13,16 +13,16 @@ namespace Asp_Potlog_Mihaela_Rp.Data
             : base(options)
         {
         }
-        public Asp_Potlog_Mihaela_RpContext()
-        {
-            Database.EnsureCreated();
-        }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer(
-                "Server=(localdb)\\mssqllocaldb;Database=Asp_Potlog_Mihaela_RpContext-3b397d0d-4109-45c4-96b2-f3711c9932a9;Trusted_Connection=True;MultipleActiveResultSets=true");
-        }
+        // public Asp_Potlog_Mihaela_RpContext()
+        // {
+        //     Database.EnsureCreated();
+        // }
+        //
+        // protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        // {
+        //     optionsBuilder.UseSqlServer(
+        //         "Server=(localdb)\\mssqllocaldb;Database=Asp_Potlog_Mihaela_RpContext-3b397d0d-4109-45c4-96b2-f3711c9932a9;Trusted_Connection=True;MultipleActiveResultSets=true");
+        // }
 
         public DbSet<Asp_Potlog_Mihaela_Rp.Models.Movie> Movie { get; set; }
     }
